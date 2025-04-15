@@ -34,6 +34,7 @@ app.get('/:id', async (req, res) => {
         );
         const data = await response.json();
         res.json(data);
+        console.log(data);
     } catch (error) {
         res.status(500).json({ error: 'Internal Server Error' });
     }
@@ -47,6 +48,7 @@ app.get('/resumido/:id', async (req, res) => {
         );
         const data = await response.json();
         res.json(data);
+        console.log(data);
     } catch (error) {
         res.status(500).json({ error: 'Internal Server Error' });
     }
